@@ -1,3 +1,3 @@
-add_lunch_combo dot_kuntao-eng
-add_lunch_combo dot_kuntao-user
-add_lunch_combo dot_kuntao-userdebug
+add_lunch_combo fh_kuntao-eng
+add_lunch_combo fh_kuntao-user
+add_lunch_combo fh_kuntao-userdebug
