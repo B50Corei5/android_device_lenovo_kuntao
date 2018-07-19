@@ -231,6 +231,17 @@ vendor/lib/libtinyxml2_1.so|8e4518688e4be068ad43624d4e0d3c7461e54791
 -app/ims/ims.apk|42881dc3adfd5e4f716bdb4d510ca45a0b415b74
 -app/uceShimService/uceShimService.apk|9e9d8b79e6d6d3a462a7ea9ddd13a188500a1af7
 etc/permissions/qti-vzw-ims-internal.xml|3e41b645dd4ad8bad6775c103a34bfd7a507a4f7
+lib/com.qualcomm.qti.imscmservice@1.0.so|1dec77e0803ea99d85c87874c81c54688d4bd59d
+lib/lib-imscamera.so|b5229cfab8d44b9184de250196d108e813a0df85
+lib/lib-imsvideocodec.so|ee05db3a277ce6f7a639e72fb4ba9124d70c177f
+lib/lib-imsvtextutils.so|09dc85ac7a4757f3c53f4f1c91ddb59ab4b43e32
+lib/lib-imsvtutils.so|4de6be85e718495ca699594b9775c781e14255bf
+lib/libdiag_system.so|f207e0075be87f67ecd7c0c629cb542212884e28
+lib/libimscamera_jni.so|eaebe72065e1d7e70b30310e40c17b673855f7dc
+lib/libimsmedia_jni.so|ee3ee24a5ca27eabb85b4c55b43b1a6816aec9a0
+lib/librcc.so|955ecd4a4c59b7f9c961471c05d9f6d91a9039f9
+lib/vendor.qti.imsrtpservice@1.0.so|60be108ebb7f9c8f46a8821c3b39b205c17cfb40
+lib64/com.qualcomm.qti.imscmservice@1.0.so|00f25863f784410c753561795ad9a024997a5c07
 lib64/lib-imscamera.so|2bd3687fccd55ff5ce393ae09b880b865a32621c
 lib64/lib-imsvideocodec.so|4eda9cc57db1ef2b54b7ad52290841062fb790ab
 lib64/lib-imsvt.so|3abfadb7e8702dea1ba6afffd044456854a6e31c

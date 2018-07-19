@@ -1,3 +1,4 @@
-add_lunch_combo candy_kuntao-eng
-add_lunch_combo candy_kuntao-user
-add_lunch_combo candy_kuntao-userdebug
+add_lunch_combo dot_kuntao-eng
+add_lunch_combo dot_kuntao-user
+add_lunch_combo dot_kuntao-userdebug
+
