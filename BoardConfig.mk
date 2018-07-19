@@ -84,8 +84,6 @@ TARGET_NO_BOOTLOADER := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_TS_MAKEUP := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-BOARD_QTI_CAMERA_32BIT_ONLY := true
-TARGET_TS_MAKEUP := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -94,13 +92,15 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 # CNE | DPM
 BOARD_USES_QCNE := true
 
-# Dex
+# Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+    endif
   endif
 endif
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/lenovo/kuntao/config.fs
@@ -180,7 +180,9 @@ BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 TARGET_PER_MGR_ENABLED := true
 
 # Power
-TARGET_POWERHAL_VARIANT := qcom
+TARGET_HAS_NO_WIFI_STATS := true
+TARGET_TAP_TO_WAKE_NODE := "/sys/board_properties/tpd_suspend_status"
+TARGET_USES_INTERACTION_BOOST := true
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
@@ -208,6 +210,7 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # Tap-to-Wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/board_properties/tpd_suspend_status"
+
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
